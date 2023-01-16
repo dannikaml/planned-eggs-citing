@@ -18,3 +18,13 @@ TutorialsPoint:
 
 Dayjs:
 - https://day.js.org/docs/en/parse/date
+
+jQuery:
+- https://api.jquery.com/click/#click-handler
+- https://api.jquery.com/parent/#parent-selector
+
+YouTube: 
+- https://www.youtube.com/watch?v=JjIvF0yikGU
+
+MDN:
+- https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem
