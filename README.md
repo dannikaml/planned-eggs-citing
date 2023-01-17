@@ -1,14 +1,21 @@
 # planned-eggs-citing
 
+## A daily planner  
+***
+A digital daily work planner. 
+
+### Description
+***
+This is a module challenge, wherein a starter code was refactored to make a daily work planner. The date and time is shown and updates everyday. There are blocks for each hour where notes and/or todo's or any kind of text can be saved. The boxes update, present, past, future by color. This is built using dayjs, javaScript, jquery
+
+### Usage
+***
+Type and store data in this daily work planner to stay on top of the day. Click the same button to store text. 
 
 
 
-
-
-
-
-
-
+### Screenshot
+![Page Screenshot](/Assets/Screenshot%202023-01-17%20100947.png)
 
 ### Sources
 ***

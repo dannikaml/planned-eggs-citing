@@ -11,10 +11,10 @@ $(document).ready(function () {
 
     //setting variable for the time of day in the planner and the input data
     var input = $(this).siblings('.description').val();
-    var hour = document.querySelectorAll(".hour")
-   //var hour = $(this).parent().attr('id');
+   // var hour = document.querySelectorAll(".hour")
+    var time = $(this).parent().attr('id');
 
-    localStorage.setItem(input, hour);
+    localStorage.setItem(input, time);
   })
 
 });
@@ -22,7 +22,7 @@ $(document).ready(function () {
 
   function nextHour() {
     var currentHour = dayjs().hour();
-    var date = dayjs().format('dddd MMM D YYYY');
+    var date = dayjs().format('dddd MMMM D YYYY');
      $('#currentDay').text(date);
 
       
@@ -43,4 +43,24 @@ $(document).ready(function () {
         });
       }
     
-     
+      nextHour();
+    
+      // hour counter
+      setInterval(nextHour, 15000);
+    
+      // saved data from localStorage (still not updating?????)
+      $('#hour-9 .description').val(localStorage.getItem('hour-9'));
+      $('#hour-10 .description').val(localStorage.getItem('hour-10'));
+      $('#hour-11 .description').val(localStorage.getItem('hour-11'));
+      $('#hour-12 .description').val(localStorage.getItem('hour-12'));
+      $('#hour-1 .description').val(localStorage.getItem('hour-1'));
+      $('#hour-2 .description').val(localStorage.getItem('hour-2'));
+      $('#hour-3 .description').val(localStorage.getItem('hour-3'));
+      $('#hour-4 .description').val(localStorage.getItem('hour-4'));
+      $('#hour-5 .description').val(localStorage.getItem('hour-5'));
+      $('#hour-6 .description').val(localStorage.getItem('hour-6'))
+      $('#hour-7 .description').val(localStorage.getItem('hour-7'))
+
+    
+    
+      
